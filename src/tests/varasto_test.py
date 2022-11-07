@@ -40,7 +40,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
     
     def test_negatiivinen_tilavuus_nollautuu(self):
-        virheellinen_varasto = Varasto(-10)
+        virheellinen_varasto = Varasto(-1)
         self.assertAlmostEqual(virheellinen_varasto.tilavuus,0)
 
     def test_negatiivinen_saldo_nollautuu(self):
