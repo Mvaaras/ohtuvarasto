@@ -3,8 +3,7 @@ class Varasto:
         self.tilavuus = self.validate(tilavuus,tilavuus)
         self.saldo = self.validate(alku_saldo, tilavuus)
 
-    # huom: ominaisuus voidaan myös laskea.
-    # Ei tarvita erillistä kenttää viela_tilaa tms.
+    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def validate(self,value,max_value):
         if value >= 0:
             if value <= max_value:
